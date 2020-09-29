@@ -1,10 +1,12 @@
-  "layout": "page",
+--- 
+"layout": "page",
 "lang": "En",
 "title": "Studienarbeit",
 "date": "Sept 2020",
 "description": "Mein Bericht",
 "tags": ["microjam","mec-2","Studienarbeit"," "],
 "math": true
+ ---
   
   
   # **Center of Mass and Mass Moment of Inertia of Particles (Polygonal)**
@@ -58,7 +60,7 @@ $$ J = \int_{0}^{M} r^2 \mathrm{d}m $$ (1.4)
 where $r$ is the vector perpendicular to the axis of rotation and extending from a point on the rotation axis to a point of the mass element $\mathrm{d}m$.
 
 <figure>
-  <img src="inertia.png">
+  <img src="./bilder/inertia.png">
   <figcaption>Fig. 1: Moment of Inertia</figcaption>
 </figure>
 
@@ -76,7 +78,7 @@ We will start this case study using two point masses, which then be correlated w
 ### **2.1 Centroid of 2 Point Masses**
 
 <figure>
-  <img src="stab1.png">
+  <img src="./bilder/stab1.png">
   <figcaption>Fig. 2: Two Point Masses</figcaption>
 </figure>
 
@@ -113,7 +115,7 @@ $$
 For a thin rod with a uniform mass density, the center of mass is at its center. Logically, the use of symmetry would tell you that the center of mass is at the geometric center of the rod without calculation.
 
 <figure>
-  <img src="stab2.png">
+  <img src="./bilder/stab2.png">
   <figcaption>Fig. 3: Uniform Rod </figcaption>
 </figure>
 
@@ -187,7 +189,7 @@ Next, we will do calculations for three point masses with its corresponding shap
 A minimal representation of a triangle can be achieved by specifying only two side vectors $a$ and $b$ and running both from one common point to the other two points each. Three identical point masses are located at each vertices of the triangle with their coordinates respectively.
 
 <figure>
-  <img src="dreieck1.png">
+  <img src="./bilder/dreieck1.png">
   <figcaption>Fig. 4: Three Point Masses </figcaption>
 </figure>
 
@@ -240,7 +242,7 @@ For an arbitrary triangle, we can apply the same two side vectors $a$ and $b$ wi
 > $$ A = \frac{1}{2} \tilde{a} \cdot b $$
 
 <figure>
-  <img src="dreieck2.png">
+  <img src="./bilder/dreieck2.png">
   <figcaption>Fig. 5: Triangle</figcaption>
 </figure>
 
@@ -343,7 +345,7 @@ A quadrilateral is a polygon with four edges (sides) and four vertices (corners)
 Like arbitrary triangle, we can represent a scalene quadrilateral using three side vectors $a$, $b$ and $c$ which run from one common point (point mass $m_1$). Three other identical point masses as $m_1$ are located at each end of the vectors with their respective coordinates.
 
 <figure>
-  <img src="viereck1.png">
+  <img src="./bilder/viereck1.png">
   <figcaption>Fig. 6: Four Point Masses</figcaption>
 </figure>
 
@@ -387,7 +389,7 @@ $$
 A representation of a planar quadrilateral is the same of that in constructing four point masses.
 
 <figure>
-  <img src="viereck2.png">
+  <img src="./bilder/viereck2.png">
   <figcaption>Fig. 7: Quadrilateral</figcaption>
 </figure>
 
@@ -414,7 +416,7 @@ d_{D1}^2, d_{D2}^2 &\quad \text{Distance between $m_1$ and center of mass of fir
 $$
 
 <figure>
-  <img src="viereck3.png">
+  <img src="./bilder/viereck3.png">
   <figcaption>Fig. 8: Center of mass in quadrilateral</figcaption>
 </figure>
 
