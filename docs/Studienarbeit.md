@@ -7,9 +7,10 @@
 "tags": ["microjam","mec-2","Studienarbeit"," "],
 "math": true
  ---
+
   
-  
-  # **Center of Mass and Mass Moment of Inertia of Particles (Polygonal)**
+
+# **Center of Mass and Mass Moment of Inertia of Particles (Polygonal)**
 
 Sarah Sabrina Binti Shaharudin <br>
 *University of Applied Sciences, Dortmund, Germany* <br>
