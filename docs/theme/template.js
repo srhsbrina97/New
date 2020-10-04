@@ -1,4 +1,4 @@
-module.exports = {
+const tmpl = module.exports = {
 // page layout ... possibly used by other templates
 page(data) {
   return `<!doctype html>
@@ -7,6 +7,7 @@ page(data) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,user-scalable=no">
 <meta name="description" content="${data.description || (data.title + ' - microjam page')}">
+${data.authors ? `<meta name="authoraa" content="${data.authors.join()}">` : ''}
 ${data.date ? `<meta name="date" content="${new Date(data.date).toString()}">` : ''}
 ${data.tags ? `<meta name="keywords" content="${data.tags.join()}">` : ''}
 <base href="${'./'+data.reldir}">
@@ -18,10 +19,15 @@ ${data.math ? `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/d
 </head>
 <body>
 <header>
-  <a href="./index.html" class="left">My Site</a>
-  <a href="./about.html" class="right">About</a>
+  <a href="./index.html" class="left">Studienarbeit</a>
 </header>
 <main>
+<h1>${data.title}</h1>
+  ${data.subtitle ? `<h3>${data.subtitle}</h3>` : ''}
+  ${data.authors ? `<h4>${data.authors.join(', ')}</h4>` : ''}
+  ${data.adresses ? `<h4>${data.adresses.join('<br>')}</h4>` : ''}
+  ${data.date ? `<h4>${data.date}</h4>` : ''}
+  ${data.tags ? `<h4><b>Keywords:</b> ${data.tags.join(', ')}</h4>` : ''}
 ${data.content}
 </main>
 <footer>
