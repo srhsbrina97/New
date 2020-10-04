@@ -1,33 +1,29 @@
 --- 
-"layout": "page",
-"lang": "En",
-"title": "Studienarbeit",
-"date": "Sept 2020",
+"layout": "article",
+"lang": "en",
+"authors": ["Sarah Sabrina Binti Shaharudin <sup>1</sup>"],
+"adresses": ["<sup>1</sup> University of Applied Sciences, Dortmund, Germany"],
+"title": "Center of Mass and Mass Moment of Inertia of Particles (Polygonal)",
+"date": "June 2020",
 "description": "Mein Bericht",
 "tags": ["microjam","mec-2","Studienarbeit"," "],
 "math": true
- ---
-
-  
-
-# **Center of Mass and Mass Moment of Inertia of Particles (Polygonal)**
-
-Sarah Sabrina Binti Shaharudin <br>
-*University of Applied Sciences, Dortmund, Germany* <br>
-June 2020 
-
-## **Abstract**
 ---
 
-In this research project, we will conduct a theory, in which mass moment of inertia of identical point masses is equal to the moment of inertia of its corresponding shape (in this case simple polygons). The centroid of the point masses is a point that corresponds to the center of gravity of a very thin homogeneous plate of the same area and shape. When the sum of $n$ point masses, $m_a$ including the concentrated mass at its center, $m_c$ is equal to the mass $M$ of the corresponding object, we are able to determine and see the trend of mass distribution of these point masses in a system of particles.
+### Abstract
+
+In this research project, we will conduct a theory, in which mass moment of inertia of identical point masses is equal to the moment of inertia of its corresponding shape (in this case simple polygons). The centroid of the point masses is a point that corresponds to the center of gravity of a very thin homogeneous plate of the same area and shape. When the sum of $n$ point masses, $m_a$ including the concentrated mass at its center, $m_c$ is equal to the mass $M$ of the corresponding object, we are able to determine and see the trend of mass distribution of these point masses in a system of particles. 
 
 Mathematically, it can be written as
-$$ \sum M_{Particles} = n \cdot m_{a} + m_{c} = M $$ (1.1)
-<!-- <div style="text-align: right"> (1.1) </div><br> -->
 
-## **1. Introduction**
-----
- ### **1.1 Center of Mass**
+$$ \sum M_{Particles} = n \cdot m_{a} + m_{c} = M $$ (1.1)
+
+---
+
+## 1 Introduction
+
+### 1.1 Center of Mass
+
 The *center of mass* is the unique point at the center of a distribution of mass in space that has the property that the weighted position vectors relative to this point sum to zero. Simply saying, it is the average position of all the parts of the system. For simple rigid objects with uniform density, the center of mass, $r_c$ is located at the *centroid*. Informally, it is the point at which a cutout of the shape could be perfectly balanced on the tip of a pin.
 
 A weighted position vector, $r$ is a vector which points from the origin to an object and has magnitude $m$, where $m$ is the mass of the object. For a system of $n$ objects, the center of mass is the point where 
@@ -40,7 +36,7 @@ The sum of vectors for the total mass will point us to the center of mass. Mathe
 
 $$ r_{c} = \frac{\sum_{i = 1}^{n} m_{i} \cdot r_{i}}{\sum_{i = 1}^{n} m_{i}} $$ (1.2)
 
-### **1.2 Mass Moment of Inertia**
+### 1.2 Mass Moment of Inertia
 
 The *mass moment of inertia* measures the extent to which an object resists rotational acceleration about an axis, and is the rotational analogue to mass. The larger the mass moment of inertia, the smaller the angular acceleration about that axis for a given torque.
 
@@ -71,12 +67,12 @@ where $r$ is the vector perpendicular to the axis of rotation and extending from
 
 Usually, the mass element $\mathrm{d} m$ will be expressed in terms of the geometry of the object, so that the integration can be carried out over the object as a whole (for example, over a long uniform rod).
 
-## **2. Straight Line**
+## 2 Straight Line
 ----
 
 We will start this case study using two point masses, which then be correlated with a slender, uniform rod of the same length. The rod has a mass of $M$ which is equally distributed across the rod. The two point masses are of equal mass $m_a$.
 
-### **2.1 Centroid of 2 Point Masses**
+### 2.1 Centroid of 2 Point Masses
 
 <figure>
   <img src="./bilder/stab1.png">
@@ -100,7 +96,7 @@ Thus, we have
 
 $$ x_c = \frac {1}{2}l $$
 
-### **2.2 Mass Moment of Inertia of 2 Point Masses**
+### 2.2 Mass Moment of Inertia of 2 Point Masses
 
 To find the mass moment of inertia, we have to determine the axis of rotation of the system. The axis of rotation is located at the center of mass of the system (here $x_c$). Using the equation from [(1.3)](#1.2-Mass-Moment-of-Inertia),
 
@@ -111,7 +107,7 @@ $$
 \end{aligned}
 $$
 
-### **2.3 A Uniform Rod**
+### 2.3 A Uniform Rod
 
 For a thin rod with a uniform mass density, the center of mass is at its center. Logically, the use of symmetry would tell you that the center of mass is at the geometric center of the rod without calculation.
 
@@ -180,12 +176,12 @@ $$
  \end{aligned} 
   $$ (T2)
 
-## **3. Triangle**
+## 3 Triangle
 ----
 
 Next, we will do calculations for three point masses with its corresponding shape, arbitrary triangle of the same size. The idea is, the center of gravity of this triangle coincides with the center of gravity of the three point masses.
 
-### **3.1 Centroid of 3 Point Masses**
+### 3.1 Centroid of 3 Point Masses
 
 A minimal representation of a triangle can be achieved by specifying only two side vectors $a$ and $b$ and running both from one common point to the other two points each. Three identical point masses are located at each vertices of the triangle with their coordinates respectively.
 
@@ -218,7 +214,7 @@ $$
 
 To verify these values, applying the definition of *center of mass*, the sum of all $r_c$ will result to zero.
 
-### **3.2 Mass Moment of Inertia of 3 Point Masses**
+### 3.2 Mass Moment of Inertia of 3 Point Masses
 
 As we have learnt, the axis of rotation in this system of particles located at the centroid of the three point masses. Using the equation from [(1.3)](#1.2-Mass-Moment-of-Inertia), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass.
 
@@ -235,12 +231,12 @@ $$
 $$ 
 
 
-### **3.3 Triangle**
+### 3.3 Triangle
 
 For an arbitrary triangle, we can apply the same two side vectors $a$ and $b$ with the emphasis of the area of the triangle instead of the vertices. Quoting from article [[1](https://www.researchgate.net/publication/338655499_Symplectic_Geometry_for_Engineers_-_Triangle)], the area of the triangle is as follows:
 
 > *The symplectic inner product $\tilde{a} b$ of both vectors corresponds to the signed area of the parallelogram spanned by them. Since the orientation from $a$ to $b$ is mathematically positive, so it is the area. Half of it conforms to the triangle area*: 
-> $$ A = \frac{1}{2} \tilde{a} \cdot b $$
+> $A = \frac{1}{2} \tilde{a} \cdot b$
 
 <figure>
   <img src="./bilder/dreieck2.png">
@@ -274,8 +270,8 @@ $$ I= I_{c}+Ad^2 $$
 
 $$
 \begin{aligned}
-I_{c} &\quad \text{Moment of inertia around the center of mass} &&&&&&&&&&&&&&&&& \\
-I &\quad \text{Moment of inertia about any other point of distance $d$ (here $r_c$)} \\
+I_{c} &\quad \text{Moment of inertia around the center of mass}\\
+I &\quad \text{Moment of inertia about any other point of distance}\quad d\quad (\text{here}\quad r_c) \\
 A &\quad \text{Area of triangle} 
 \end{aligned} 
 $$
@@ -336,12 +332,12 @@ $$
 \end{aligned}
 $$ (T4)
 
-## **4. Quadrilateral**
+## 4 Quadrilateral
 ----
 
 A quadrilateral is a polygon with four edges (sides) and four vertices (corners). In this case study, we will use a scalene quadrilateral, which is a four-sided polygon that has no congruent or identical sides. We will seek the relationship between four point masses of the same mass and a planar quadrilateral of the same size as the point masses in terms of mass moment of inertia. The centroid of four point masses also coincides with the center of mass of this quadrilateral.
 
-### **4.1 Centroid of 4 Point Masses**
+### 4.1 Centroid of 4 Point Masses
 
 Like arbitrary triangle, we can represent a scalene quadrilateral using three side vectors $a$, $b$ and $c$ which run from one common point (point mass $m_1$). Three other identical point masses as $m_1$ are located at each end of the vectors with their respective coordinates.
 
@@ -373,7 +369,7 @@ $$
 \end{aligned}
 $$ 
 
-### **4.2 Mass Moment of Inertia of 4 Point Masses**
+### 4.2 Mass Moment of Inertia of 4 Point Masses
 
 Applying the same concept as three point masses, the axis of rotation of four point masses is located at the centroid. Using the equation from [(1.3)](#1.2-Mass-Moment-of-Inertia), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass
 
@@ -385,7 +381,7 @@ $$
 \end{aligned}
 $$ 
 
-### **4.3 Quadrilateral**
+### 4.3 Quadrilateral
 
 A representation of a planar quadrilateral is the same of that in constructing four point masses.
 
@@ -407,12 +403,12 @@ where
 
 $$
 \begin{aligned}
-I_{D1} &\quad \text{Moment of inertia of the first triangle formed by vectors $a$ and $b$ about point $m_1$} \\
-I_{D2} &\quad \text{Moment of inertia of the second triangle formed by vectors $a$ and $c$ about point $m_1$} \\
-I_{c1}, I_{c2} &\quad \text{Moment of inertia of the (respectively) first/second triangle about the center of} \\
-&\quad \text{mass of the triangle} \\
-A_{D1}, A_{D2} &\quad \text{Area of first/second triangle} \\
-d_{D1}^2, d_{D2}^2 &\quad \text{Distance between $m_1$ and center of mass of first/second triangle}
+I_{D1} &\quad \text{Moment of inertia of the first triangle formed by vectors}\quad a \quad \text{and}\quad b\quad \text{about point}\quad  m_1\\
+I_{D2} &\quad \text{Moment of inertia of the second triangle formed by vectors}\quad a \quad \text{and}\quad c\quad \text{about point}\quad  m_1\\
+I_{c1}, I_{c2} &\quad \text{Moment of inertia of the (respectively) first/second triangle about the center of}\\
+&\quad \text{mass of the triangle}\\
+A_{D1}, A_{D2} &\quad \text{Area of first/second triangle}\\
+d_{D1}^2, d_{D2}^2 &\quad \text{Distance between}\quad m_1\quad \text{and center of mass of first/second triangle}
 \end{aligned}
 $$
 
@@ -499,11 +495,12 @@ $$
 $$ (T6)
 
 
-## **5. n-sided Polygons**
+## 5. n-sided Polygons
 ----
+
 From all the calculations made, we have
 
-<center>
+#### Table 1:
 
 | Sides    |         $m_a$         |       $m_c$         |
 | -------- |:---------------------:| -------------------:|
@@ -511,15 +508,12 @@ From all the calculations made, we have
 | 3        | $\frac{1}{12} M$ (T3) | $\frac{3}{4} M$ (T4)|
 | 4        | $\frac{1}{12} M$ (T5) | $\frac{2}{3} M$ (T6)|
 
-</center>
 <br>
 
 Based on the results obtained, we can offer a hypothesis for the mass distribution of point masses in a system of particles such that:
 
-1. $n$-sided polygons with $n$=even numbers will result in 
-   $$ m_{c}=\frac{2}{3}M $$
-2. $n$-sided polygons with $n$=odd numbers will result in 
-   $$ m_{c}=\frac{3}{4}M $$
+1. $n$-sided polygons with $n = even\ numbers$ will result in $m_{c}=\frac{2}{3}M$
+2. $n$-sided polygons with $n=odd\ numbers$ will result in $m_{c}=\frac{3}{4}M$
 
 For point masses $m_{a}$ of 
 
@@ -533,7 +527,7 @@ $$ m_{a}=\frac{M}{4n} $$
 
 Inserting the value of $n$ into the equation for polygons with 5 to 9 sides results in
 
-<center>
+#### Table 2: 
 
 | Sides    |       $m_a$       |     $m_c$       |
 | -------- |:-----------------:| ---------------:|
@@ -543,15 +537,14 @@ Inserting the value of $n$ into the equation for polygons with 5 to 9 sides resu
 | 8        | $\frac{1}{24} M$  | $\frac{2}{3} M$ |
 | 9        | $\frac{1}{36} M$  | $\frac{3}{4} M$ |
 
-</center>
-
-## **6. Conclusion**
+## 6 Conclusion
 ----
 
 The center of mass is a useful reference point for calculations in mechanics that involve masses distributed in space. The shape of an object might already be mathematically determined, but it may be too complex to use a known formula. Therefore this case study might helps when you have a 2D surface with a lot of sides/vertices. We can also conclude that in a system of particles, more than half of the total mass would be concentrated at its center of mass.
 
-## **Reference**
+## Reference
 ----
+
 [1. Symplectic Geometry for Engineers - Triangle](https://www.researchgate.net/publication/338655499_Symplectic_Geometry_for_Engineers_-_Triangle)<br>
 [2. Center of Mass](https://courses.lumenlearning.com/boundless-physics/chapter/center-of-mass/)<br>
 [3. What is Center of Mass?](https://www.khanacademy.org/science/physics/linear-momentum/center-of-mass/a/what-is-center-of-mass)<br>
