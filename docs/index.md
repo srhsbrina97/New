@@ -18,9 +18,8 @@ Mathematically, it can be written as
 
 $$ \sum M_{Particles} = n \cdot m_{a} + m_{c} = M $$ (1.1)
 
----
-
 ## 1 Introduction
+---
 
 ### 1.1 Center of Mass
 
@@ -79,7 +78,7 @@ We will start this case study using two point masses, which then be correlated w
   <figcaption>Fig. 2: Two Point Masses</figcaption>
 </figure>
 
-For two point masses, the position vectors are located along the $x$-axis. Here, we take $x_1$ as the reference point for all position vectors. Using the equation from [(1.2)](#1.1-Center-Of-Mass) the position of the center of mass is given by a position vector
+For two point masses, the position vectors are located along the $x$-axis. Here, we take $x_1$ as the reference point for all position vectors. Using the equation from (1.2) the position of the center of mass is given by a position vector
 
 $$
 \begin{aligned}
@@ -98,7 +97,7 @@ $$ x_c = \frac {1}{2}l $$
 
 ### 2.2 Mass Moment of Inertia of 2 Point Masses
 
-To find the mass moment of inertia, we have to determine the axis of rotation of the system. The axis of rotation is located at the center of mass of the system (here $x_c$). Using the equation from [(1.3)](#1.2-Mass-Moment-of-Inertia),
+To find the mass moment of inertia, we have to determine the axis of rotation of the system. The axis of rotation is located at the center of mass of the system (here $x_c$). Using the equation from (1.3),
 
 $$
 \begin{aligned}
@@ -116,7 +115,8 @@ For a thin rod with a uniform mass density, the center of mass is at its center.
   <figcaption>Fig. 3: Uniform Rod </figcaption>
 </figure>
 
-The moment of inertia for a thin, uniform rod with axis through center using the general equation from [(1.4)](#1.2-Mass-Moment-of-Inertia),
+The moment of inertia for a thin, uniform rod with axis through center using the general equation from (1.4),
+<!-- [(1.4)](#1.2-Mass-Moment-of-Inertia) -->
 
 $$ J = \int{} x^2 \mathrm{d}M $$
 
@@ -161,7 +161,7 @@ $$ (T1)
 
 This means the mass of each point mass $m_a$ equals to one sixth of the mass of the rod, and the rest belongs to the mass concentrated at the center of the point masses.
 
-To find the value of the concentrated mass at its center, we use the equation from [(1.1)](#abstract)
+To find the value of the concentrated mass at its center, we use the equation from (1.1)
 
 $$
 \begin{aligned}
@@ -190,7 +190,7 @@ A minimal representation of a triangle can be achieved by specifying only two si
   <figcaption>Fig. 4: Three Point Masses </figcaption>
 </figure>
 
-From equation [(1.2)](#1.1-Center-Of-Mass), we can define the position vector, $r_i$ in the direction of $a$ and $b$ which points from point mass $m_1$. Thus, the position of the center of mass is
+From equation (1.2), we can define the position vector, $r_i$ in the direction of $a$ and $b$ which points from point mass $m_1$. Thus, the position of the center of mass is
 
 $$ r_c = \frac{m_{1} \cdot\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} + m_{2} \cdot \begin{pmatrix} 0 \\ b\\ \end{pmatrix} + m_3 \cdot \begin{pmatrix} a \\0 \\ \end{pmatrix}}{m_{1} + m_{2} +m_3} $$
 
@@ -216,7 +216,7 @@ To verify these values, applying the definition of *center of mass*, the sum of 
 
 ### 3.2 Mass Moment of Inertia of 3 Point Masses
 
-As we have learnt, the axis of rotation in this system of particles located at the centroid of the three point masses. Using the equation from [(1.3)](#1.2-Mass-Moment-of-Inertia), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass.
+As we have learnt, the axis of rotation in this system of particles located at the centroid of the three point masses. Using the equation from (1.3), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass.
 
 $$ J = m_{1} \cdot (\frac{1}{3} (a+b))^2 + m_{2} \cdot (\frac{1}{3}(a-2b))^2 + m_{3} \cdot (\frac{1}{3} (b-2a))^2 $$
 
@@ -247,7 +247,7 @@ Here, we can assume that the planar triangle have a constant mass distribution (
 
 $$ \rho = \frac{M}{V} = \frac{\mathrm{d}M}{\mathrm{d}V} = \frac{\mathrm{d}M}{\mathrm{d}A \cdot t} $$
 
-Inserting $\mathrm{d}M=\rho t \mathrm{d}A$ into equation [(1.4)](#1.2-Mass-Moment-of-Inertia) results in
+Inserting $\mathrm{d}M=\rho t \mathrm{d}A$ into equation (1.4) results in
 
 $$ J = \int_{m} r^2 \mathrm{d}M = \rho t \int_{A} r^2 \mathrm{d}A = \rho t I = \rho t (I_{x} + I_{y}) $$
 
@@ -271,7 +271,7 @@ $$ I= I_{c}+Ad^2 $$
 $$
 \begin{aligned}
 I_{c} &\quad \text{Moment of inertia around the center of mass}\\
-I &\quad \text{Moment of inertia about any other point of distance}\quad d\quad (\text{here}\quad r_c) \\
+I &\quad \text{Moment of inertia about any other point of distance } d \text{ (here } r_c) \\
 A &\quad \text{Area of triangle} 
 \end{aligned} 
 $$
@@ -317,7 +317,7 @@ $$ (T3)
 
 We learn that the mass of each point mass $m_a$ equals to one twelfth of the mass of a planar triangle, while the rest belongs to the mass concentrated at the center of the point masses.
 
-Using the equation from [(1.1)](#abstract) will result in
+Using the equation from (1.1) will result in
 
 $$
   \begin{aligned}
@@ -346,7 +346,7 @@ Like arbitrary triangle, we can represent a scalene quadrilateral using three si
   <figcaption>Fig. 6: Four Point Masses</figcaption>
 </figure>
 
-Adding the direction $c$ as one of the position vectors $r_i$ along with $a$ and $b$ (all pointing from point mass $m_1$), the position of the centroid of four point masses using equation [(1.2)](#1.1-Center-Of-Mass) can be defined as
+Adding the direction $c$ as one of the position vectors $r_i$ along with $a$ and $b$ (all pointing from point mass $m_1$), the position of the centroid of four point masses using equation (1.2) can be defined as
 
 $$ r_c = \frac{m_{1} \cdot\begin{pmatrix} 0 \\ 0 \\ 0\end{pmatrix} + m_{2} \cdot \begin{pmatrix} 0 \\ b\\ 0 \end{pmatrix} + m_3 \cdot \begin{pmatrix} a \\0 \\ 0 \end{pmatrix} + m_4 \cdot \begin{pmatrix}0\\0\\c\end{pmatrix}}{m_{1} + m_{2} +m_3+m_4}   $$
 
@@ -371,7 +371,7 @@ $$
 
 ### 4.2 Mass Moment of Inertia of 4 Point Masses
 
-Applying the same concept as three point masses, the axis of rotation of four point masses is located at the centroid. Using the equation from [(1.3)](#1.2-Mass-Moment-of-Inertia), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass
+Applying the same concept as three point masses, the axis of rotation of four point masses is located at the centroid. Using the equation from (1.3), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass
 
 $$
   \begin{aligned}
@@ -403,12 +403,12 @@ where
 
 $$
 \begin{aligned}
-I_{D1} &\quad \text{Moment of inertia of the first triangle formed by vectors}\quad a \quad \text{and}\quad b\quad \text{about point}\quad  m_1\\
-I_{D2} &\quad \text{Moment of inertia of the second triangle formed by vectors}\quad a \quad \text{and}\quad c\quad \text{about point}\quad  m_1\\
+I_{D1} &\quad \text{Moment of inertia of the first triangle formed by vectors } a \text{ and } b \text{ about point }  m_1\\
+I_{D2} &\quad \text{Moment of inertia of the second triangle formed by vectors } a \text{ and } c \text{ about point }  m_1\\
 I_{c1}, I_{c2} &\quad \text{Moment of inertia of the (respectively) first/second triangle about the center of}\\
 &\quad \text{mass of the triangle}\\
 A_{D1}, A_{D2} &\quad \text{Area of first/second triangle}\\
-d_{D1}^2, d_{D2}^2 &\quad \text{Distance between}\quad m_1\quad \text{and center of mass of first/second triangle}
+d_{D1}^2, d_{D2}^2 &\quad \text{Distance between } m_1 \text{ and center of mass of first/second triangle}
 \end{aligned}
 $$
 
@@ -417,12 +417,11 @@ $$
   <figcaption>Fig. 8: Center of mass in quadrilateral</figcaption>
 </figure>
 
-$r_{t1}$ and $r_{t2}$ are the center of mass of the triangles respectively (Fig. 8 is just a sketch and not accurate). $d_{D1}$ and $d_{D2}$ are then obtained using vector addition. Reintroducing $I_c$ of triangle (see [(1.5)](#3.3-Triangle)) into the equation gives us
+$r_{t1}$ and $r_{t2}$ are the center of mass of the triangles respectively (Fig. 8 is just a sketch and not accurate). $d_{D1}$ and $d_{D2}$ are then obtained using vector addition. Reintroducing $I_c$ of triangle (see (1.5)) into the equation gives us
 
 $$ 
 \begin{aligned}
-I_{T} = \frac{1}{36}\tilde{a} b \cdot (a^2-ab+b^2) + \frac{1}{2}\tilde{a}b \cdot (\frac{1}{12}(-a-b+3c))^2 \\
-+ \frac{1}{36}\tilde{a}c \cdot (a^2-ac+c^2) + \frac{1}{2}\tilde{a}c \cdot (\frac{1}{12}(-a+3b-c))^2
+I_{T} = \frac{1}{36}\tilde{a} b \cdot (a^2-ab+b^2) + \frac{1}{2}\tilde{a}b \cdot (\frac{1}{12}(-a-b+3c))^2 + \frac{1}{36}\tilde{a}c \cdot (a^2-ac+c^2) + \frac{1}{2}\tilde{a}c \cdot (\frac{1}{12}(-a+3b-c))^2
 \end{aligned} 
 $$
 
@@ -479,7 +478,7 @@ $$ (T5)
 
 Here, we can conclude that the mass of each point mass $m_a$ equals to one twelfth of the mass of a scalene quadrilateral, while the rest belongs to the mass concentrated at the center of the point masses.
 
-Using the equation from [(1.1)](#abstract) leads to
+Using the equation from (1.1) leads to
 
 $$
 \begin{aligned}
