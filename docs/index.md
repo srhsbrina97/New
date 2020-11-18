@@ -536,7 +536,66 @@ Inserting the value of $n$ into the equation for polygons with 5 to 9 sides resu
 | 8        | $\frac{1}{24} M$  | $\frac{2}{3} M$ |
 | 9        | $\frac{1}{36} M$  | $\frac{3}{4} M$ |
 
-## 6 Conclusion
+## 6. Example
+----
+
+A simple experiment can be conducted to prove this theory. We would need acrylic glass or PMMA (Poly Methyl Methacrylate) for the 2D surface meanwhile the point masses (including center mass) can be represented by using steel balls linked with light material such as plastic so that the mass is negligible.
+
+This theory is proven when these 3 tests are carried out successfully:
+
+1) Equal mass
+2) Equal center of mass
+3) Equal mass moment of inertia
+
+### Equal Mass
+
+The dimension and the total mass of the system of particles (made of steel balls) must equivalent with the acrylic glass. In this case, we will conduct an experiment using 3 point masses and its corresponding 2D shape, triangle. Firstly, cut the acrylic glass into a arbitrary triangle shape. Take the measurement of the dimension and the mass of the acrylic glass. Using the mass of the glass, compare with the calculated mass for the steel balls. In this case, the mass of the steel balls acting as the point masses need to be one twelfth of the mass of acrylic glass meanwhile the steel ball acting as the center mass has a mass of three quarter of the mass of the acrylic glass. The steel balls are then linked together and this is done by 3D printing technic, in which the center mass needs to be located at the center of mass of the system as calculated before.
+
+The mass of the completed model of this system of particles using steel balls is then taken. If the mass of it corresponds with the mass of acrylic glass, then the first test is completed.
+
+### Equal Center of Mass
+
+An experimental method for locating the center of mass is to suspend both acrylic glass and the steel balls from two equivalent vertices/point masses and to mark vertical lines along the pivot points. The intersection of the two lines is the center of mass. The second test is now completed if the center of mass for the steel balls is located at the center mass and corresponds to the center of mass of the acrylic glass.
+
+### Equal mass moment of inertia
+
+To conduct the third test, we have to mount both acrylic glass and the steel balls at the same equivalent point such that it can swing in a vertical plane about an axis passing through the body. This is known as a physical pendulum, in which object oscillates as a pendulum, but cannot be modeled as a point mass on a string. Both objects are then displaced from their equilibrium position by an angle $\theta$. 
+
+<figure>
+  <img src="./bilder/torque.png">
+  <figcaption>Fig. 8: Physical Pendulum</figcaption>
+</figure>
+
+When a physical pendulum is hanging from a point but is free to rotate, it rotates because of the torque applied at the $C$, produced by the component of the object’s weight that acts tangent to the motion of the $C$. Taking the counterclockwise direction to be positive, the component of the gravitational force that acts tangent to the motion is $−mg\sin{\theta}$. The restoring torque is
+
+$$ \tau = -mgd \cdot \sin{\theta} $$
+
+and $\theta$ $\approx$ $\sin{\theta}$ for small $\theta$. 
+The torque on a given axis is also the product of the moment of inertia and the angular acceleration. Rearranging, we get:
+
+$$
+\begin{aligned}
+\tau = I \cdot \alpha &= -mgd \cdot \sin{\theta} \\
+I \cdot \frac{\mathrm{d}^2\theta}{\mathrm{d}T^2} &= -mgd \cdot \theta  \\
+\frac{\mathrm{d}^2\theta}{\mathrm{d}T^2} &= -(\frac{mgd}{I}) \cdot \theta
+\end{aligned}
+$$
+
+The angular frequency is
+$$ \omega = \sqrt{\frac{mgd}{I}} $$
+
+The period is therefore
+
+$$T = 2\pi \cdot \sqrt{\frac{I}{mgd}} $$
+
+Rearranging, moment of inertia of an object about any specific pivot point on the object is
+
+$$ I = \frac{T^2 \cdot mgd}{4\pi^2} $$
+$$ I \approx T^2 $$
+
+By achieving the same oscillation period for both acrylic glass and steel balls, the third test is now proven and thus the theory is correct.
+
+## 7.  Conclusion
 ----
 
 The center of mass is a useful reference point for calculations in mechanics that involve masses distributed in space. The shape of an object might already be mathematically determined, but it may be too complex to use a known formula. Therefore this case study might helps when you have a 2D surface with a lot of sides/vertices. We can also conclude that in a system of particles, more than half of the total mass would be concentrated at its center of mass.
