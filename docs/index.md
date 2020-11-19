@@ -25,15 +25,15 @@ $$ \sum M_{Particles} = n \cdot m_{a} + m_{c} = M $$ (1.1)
 
 The *center of mass* is the unique point at the center of a distribution of mass in space that has the property that the weighted position vectors relative to this point sum to zero. Simply saying, it is the average position of all the parts of the system. For simple rigid objects with uniform density, the center of mass, $r_c$ is located at the *centroid*. Informally, it is the point at which a cutout of the shape could be perfectly balanced on the tip of a pin.
 
-A weighted position vector, $r$ is a vector which points from the origin to an object and has magnitude $m$, where $m$ is the mass of the object. For a system of $n$ objects, the center of mass is the point where 
+A weighted position vector, $\bold{r}$ is a vector which points from the origin to an object and has magnitude $m$, where $m$ is the mass of the object. For a system of $n$ objects, the center of mass is the point where 
 
-$$ \sum_{i = 1}^{n} m_{i} \cdot r_{i} = 0 $$ 
+$$ \sum_{i = 1}^{n} m_{i} \cdot \bold{r_{i}} = 0 $$ 
 
-where $m_i$ are the point masses in a system of particles with coordinates $r_i$. 
+where $m_i$ are the point masses in a system of particles with coordinates $\bold{r_i}$. 
 
 The sum of vectors for the total mass will point us to the center of mass. Mathematically, it is given as
 
-$$ r_{c} = \frac{\sum_{i = 1}^{n} m_{i} \cdot r_{i}}{\sum_{i = 1}^{n} m_{i}} $$ (1.2)
+$$ \bold{r_{c}} = \frac{\sum_{i = 1}^{n} m_{i} \cdot \bold{r_{i}}}{\sum_{i = 1}^{n} m_{i}} $$ (1.2)
 
 ### 1.2 Mass Moment of Inertia
 
@@ -78,11 +78,11 @@ We will start this case study using two point masses, which then be correlated w
   <figcaption>Fig. 2: Two Point Masses</figcaption>
 </figure>
 
-For two point masses, the position vectors are located along the $x$-axis. Here, we take $x_1$ as the reference point for all position vectors. Using the equation from (1.2) the position of the center of mass is given by a position vector
+For two point masses, the position vectors are located along the $x$-axis. Here, we take $\bold{x_1}$ as the reference point for all position vectors. Using equation (1.2) the position of the center of mass is given by a position vector
 
 $$
 \begin{aligned}
- x_c &= \frac{\sum_{i = 1}^{n} m_{i} \cdot x_{i}}{\sum_{i = 1}^{n} m_{i}} \\
+ \bold{x_c} &= \frac{\sum_{i = 1}^{n} m_{i} \cdot \bold{x_{i}}}{\sum_{i = 1}^{n} m_{i}} \\
 &= \frac{m_{1} \cdot 0 + m_{2} \cdot l}{m_{1} + m_{2}}  
 \end{aligned}
 $$
@@ -93,11 +93,11 @@ $$ m_{1} = m_{2} = m_{a} $$
 
 Thus, we have
 
-$$ x_c = \frac {1}{2}l $$
+$$ \bold{x_c} = \frac {1}{2}l $$
 
 ### 2.2 Mass Moment of Inertia of 2 Point Masses
 
-To find the mass moment of inertia, we have to determine the axis of rotation of the system. The axis of rotation is located at the center of mass of the system (here $x_c$). Using the equation from (1.3),
+To find the mass moment of inertia, we have to determine the axis of rotation of the system. The axis of rotation is located at the center of mass of the system (here $\bold{x_c}$). Using equation (1.3),
 
 $$
 \begin{aligned}
@@ -115,7 +115,7 @@ For a thin rod with a uniform mass density, the center of mass is at its center.
   <figcaption>Fig. 3: Uniform Rod </figcaption>
 </figure>
 
-The moment of inertia for a thin, uniform rod with axis through center using the general equation from (1.4),
+The moment of inertia for a thin, uniform rod with axis through center using the general equation (1.4),
 <!-- [(1.4)](#1.2-Mass-Moment-of-Inertia) -->
 
 $$ J = \int{} x^2 \mathrm{d}M $$
@@ -161,7 +161,7 @@ $$ (T1)
 
 This means the mass of each point mass $m_a$ equals to one sixth of the mass of the rod, and the rest belongs to the mass concentrated at the center of the point masses.
 
-To find the value of the concentrated mass at its center, we use the equation from (1.1)
+To find the value of the concentrated mass at its center, we use equation (1.1)
 
 $$
 \begin{aligned}
@@ -183,60 +183,60 @@ Next, we will do calculations for three point masses with its corresponding shap
 
 ### 3.1 Centroid of 3 Point Masses
 
-A minimal representation of a triangle can be achieved by specifying only two side vectors $a$ and $b$ and running both from one common point to the other two points each. Three identical point masses are located at each vertices of the triangle with their coordinates respectively.
+A minimal representation of a triangle can be achieved by specifying only two side vectors $\bold{a}$ and $\bold{b}$ and running both from one common point to the other two points each. Three identical point masses are located at each vertices of the triangle with their coordinates respectively.
 
 <figure>
   <img src="./bilder/dreieck1.png">
   <figcaption>Fig. 4: Three Point Masses </figcaption>
 </figure>
 
-From equation (1.2), we can define the position vector, $r_i$ in the direction of $a$ and $b$ which points from point mass $m_1$. Thus, the position of the center of mass is
+From equation (1.2), we can define the position vector, $\bold{r_i}$ in the direction of $\bold{a}$ and $\bold{b}$ which points from point mass $m_1$. Thus, the position of the center of mass is
 
-$$ r_c = \frac{m_{1} \cdot\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} + m_{2} \cdot \begin{pmatrix} 0 \\ b\\ \end{pmatrix} + m_3 \cdot \begin{pmatrix} a \\0 \\ \end{pmatrix}}{m_{1} + m_{2} +m_3} $$
+$$ \bold{r_c} = \frac{m_{1} \cdot\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} + m_{2} \cdot \begin{pmatrix} x_2-x_1 \\ y_2-y_1\\ \end{pmatrix} + m_3 \cdot \begin{pmatrix} x_3-x_1 \\ y_3-y_1 \\ \end{pmatrix}}{m_{1} + m_{2} +m_3} $$
 
 Considering all point masses equal to $m_{a}$, we obtain
 
 $$
 \begin{aligned}
- r_{c} &= \frac{m_{a}\begin{pmatrix} a \\ b \\ \end{pmatrix}}{3m_{a}} \\
- r_{c} &= \frac{1}{3} (a+b) = r_{c1} 
+ \bold{r_c} &= \frac{m_a (\bold{a}+\bold{b})}{3m_{a}} \\
+ \bold{r_c} &= \frac{1}{3} (\bold{a}+\bold{b}) = \bold{r_{c1}} 
  \end{aligned}
  $$
 
-Since $r_c$ is the distance of center of mass from point mass $m_1$,we need to find the distance to the center of mass from the other two point masses. This is relatively simple as we can easily calculate using simple vector knowledge.
+Since $\bold{r_c}$ is the distance of center of mass from point mass $m_1$, we need to find the distance to the center of mass from the other two point masses. This is relatively simple as we can easily calculate using simple vector knowledge.
 
 $$
 \begin{aligned}
-  r_{c2} &= -b + r_{c} = \frac{1}{3} (a-2b) \\
-  r_{c3} &= -a + r_{c} = \frac{1}{3} (b-2a) 
+  \bold{r_{c2}} &= - \bold{b} + \bold{r_{c}} = \frac{1}{3} (\bold{a}-2\bold{b}) \\
+  \bold{r_{c3}} &= -\bold{a} + \bold{r_{c}} = \frac{1}{3} (\bold{b}-2\bold{a}) 
  \end{aligned}
 $$ 
 
-To verify these values, applying the definition of *center of mass*, the sum of all $r_c$ will result to zero.
+To verify these values, applying the definition of *center of mass*, the sum of all $\bold{r_c}$ will result to zero.
 
 ### 3.2 Mass Moment of Inertia of 3 Point Masses
 
-As we have learnt, the axis of rotation in this system of particles located at the centroid of the three point masses. Using the equation from (1.3), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass.
+As we have learnt, the axis of rotation in this system of particles located at the centroid of the three point masses. Using equation (1.3), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass.
 
-$$ J = m_{1} \cdot (\frac{1}{3} (a+b))^2 + m_{2} \cdot (\frac{1}{3}(a-2b))^2 + m_{3} \cdot (\frac{1}{3} (b-2a))^2 $$
+$$ J = m_{1} \cdot (\frac{1}{3} (\bold{a+b}))^2 + m_{2} \cdot (\frac{1}{3}(\bold{a}-2\bold{b}))^2 + m_{3} \cdot (\frac{1}{3} (\bold{b}-2\bold{a}))^2 $$
 
  Applying $m_a$ for all point masses gives us the result
 
 $$
 \begin{aligned}
-  J_{3Particles} &= \frac{m_{a}}{9} (a^2+2ab+b^2+a^2-4ab+4b^2+b^2-4ab+4a^2) \\
-  &= \frac{m_{a}}{9} (6a^2-6ab+6b^2) \\
-  &= \frac{2}{3} m_{a} (a^2-ab+b^2) 
+  J_{3Particles} &= \frac{m_{a}}{9} \cdot (a^2+2\bold{ab}+b^2+a^2-4\bold{ab}+4b^2+b^2-4\bold{ab}+4a^2) \\
+  &= \frac{m_{a}}{9} \cdot (6a^2-6\bold{ab}+6b^2) \\
+  &= \frac{2}{3} m_{a} \cdot (a^2-\bold{ab}+b^2) 
 \end{aligned}
 $$ 
 
 
 ### 3.3 Triangle
 
-For an arbitrary triangle, we can apply the same two side vectors $a$ and $b$ with the emphasis of the area of the triangle instead of the vertices. Quoting from article [[1](https://www.researchgate.net/publication/338655499_Symplectic_Geometry_for_Engineers_-_Triangle)], the area of the triangle is as follows:
+For an arbitrary triangle, we can apply the same two side vectors $\bold{a}$ and $\bold{b}$ with the emphasis of the area of the triangle instead of the vertices. Quoting from article [[1](https://www.researchgate.net/publication/338655499_Symplectic_Geometry_for_Engineers_-_Triangle)], the area of the triangle is as follows:
 
-> *The symplectic inner product $\tilde{a} b$ of both vectors corresponds to the signed area of the parallelogram spanned by them. Since the orientation from $a$ to $b$ is mathematically positive, so it is the area. Half of it conforms to the triangle area*: 
-> $A = \frac{1}{2} \tilde{a} \cdot b$
+> *The symplectic inner product $\bold{\tilde{a} b}$ of both vectors corresponds to the signed area of the parallelogram spanned by them. Since the orientation from $\bold{a}$ to $\bold{b}$ is mathematically positive, so it is the area. Half of it conforms to the triangle area*: 
+> $A = \frac{1}{2} \bold{\tilde{a} b}$
 
 <figure>
   <img src="./bilder/dreieck2.png">
@@ -255,14 +255,14 @@ where
 
 $$ I = \int_{A} r^2 \mathrm{d}A $$
 
-> *Planar moment of inertia describes how an area is distributed relative to a reference axis (typically the centroidal, or central, axis). Polar moment of inertia is analogous to planar moment of inertia (both denoted by the letter $I$) but is applicable to a cylindrical object and describes its resistance to torsion (twisting due to an applied torque). Polar moment of inertia is expressed in units of length to the fourth power m$^4$. Polar moment of inertia can also be found by summing the $x$ and $y$ planar moments of inertia ($I_x$ and $I_y$).*
+> *Planar moment of inertia describes how an area is distributed relative to a reference axis (typically the centroidal, or central axis). Polar moment of inertia is analogous to planar moment of inertia (both denoted by the letter $I$) but is applicable to a cylindrical object and describes its resistance to torsion (twisting due to an applied torque). Polar moment of inertia is expressed in units of length to the fourth power m$^4$. Polar moment of inertia can also be found by summing the $x$ and $y$ planar moments of inertia ($I_x$ and $I_y$).*
 
 We are able to find the polar (second) moment of inertia by adopting the results of treating simple polygons by Green's theorem, using the knowledge from these articles [[1](https://www.researchgate.net/publication/338655499_Symplectic_Geometry_for_Engineers_-_Triangle),[5](https://math.blogoverflow.com/2014/06/04/greens-theorem-and-area-of-polygons/),[6](https://leancrew.com/all-this/2018/01/greens-theorem-and-section-properties/)]
 
 The polar (second) moment of inertia for this triangle around the common
-start point of vectors $a$ and $b$ is
+start point of vectors $\bold{a}$ and $\bold{b}$ is
 
-$$ I = \frac{1}{12}\tilde{a}b(a^2+ab+b^2) $$
+$$ I = \frac{1}{12}\bold{\tilde{a}b} \cdot (a^2+\bold{ab}+b^2) $$
 
 However, in this case, we would need to get the second moment of inertia around the center of mass or the axis of rotation. Given Steiner's theorem,
 
@@ -271,7 +271,7 @@ $$ I= I_{c}+Ad^2 $$
 $$
 \begin{aligned}
 I_{c} &\quad \text{Moment of inertia around the center of mass}\\
-I &\quad \text{Moment of inertia about any other point of distance } d \text{ (here } r_c) \\
+I &\quad \text{Moment of inertia about any other point of distance } d \text{ (here } \bold{r_c}) \\
 A &\quad \text{Area of triangle} 
 \end{aligned} 
 $$
@@ -283,30 +283,26 @@ The moment of inertia around the centroid $I_c$ can be written as
 
 $$
 \begin{aligned}
-  &&&&&&&&&&&&&& I_{c} &= \frac{1}{12}\tilde{a}b(a^2+ab+b^2) - \frac{1}{2}\tilde{a}b (\frac{1}{3}(a+b))^2 
-\end{aligned}
-$$
-$$
-\begin{aligned}
-  &= \frac{1}{36} \tilde{a}b (a^2-ab+b^2)
+   I_{c} &= \frac{1}{12}\bold{\tilde{a}b} \cdot (a^2+\bold{ab}+b^2) - \frac{1}{2}\bold{\tilde{a}b} \cdot (\frac{1}{3}(\bold{a+b}))^2 \\
+   &= \frac{1}{36} \bold{\tilde{a}b} \cdot (a^2-\bold{ab}+b^2)
  \end{aligned}
 $$ (1.5)
 
-Combining $J$=$\rho t I_c$, $M$=$\rho At$ and $A$=$\frac{1}{2}\tilde{a}b$ yields
+Combining $J$=$\rho t I_c$, $M$=$\rho At$ and $A$=$\frac{1}{2}\cdot \bold{\tilde{a}b}$ yields
 
 $$
 \begin{aligned}
-  J_{Triangle} &= \rho t \cdot \frac{1}{36}\tilde{a}b(a^2-ab+b^2) \\
-   &= \frac{M}{18} (a^2-ab+b^2)
+  J_{Triangle} &= \rho t \cdot \frac{1}{36}\bold{\tilde{a}b} \cdot (a^2-\bold{ab}+b^2) \\
+   &= \frac{M}{18} \cdot (a^2-\bold{ab}+b^2)
 \end{aligned}
 $$
 
-Finally, back to our theory, the mass moment of inertia of three point masses is equal to the mass moment of inertia of a arbitrary triangle
+Finally, back to our theory, the mass moment of inertia of three point masses is equal to the mass moment of inertia of an arbitrary triangle
 
 $$
   \begin{aligned}
   J_{3Particles} &= J_{Triangle} \\
-  \frac{2}{3} m_{a} (a^2-ab+b^2) &= \frac{M}{18} (a^2-ab+b^2)
+  \frac{2}{3} m_{a} \cdot (a^2-\bold{ab}+b^2) &= \frac{M}{18} \cdot (a^2-\bold{ab}+b^2)
   \end{aligned}
   $$
   $$
@@ -317,7 +313,7 @@ $$ (T3)
 
 We learn that the mass of each point mass $m_a$ equals to one twelfth of the mass of a planar triangle, while the rest belongs to the mass concentrated at the center of the point masses.
 
-Using the equation from (1.1) will result in
+Using equation (1.1) will result in
 
 $$
   \begin{aligned}
@@ -339,23 +335,23 @@ A quadrilateral is a polygon with four edges (sides) and four vertices (corners)
 
 ### 4.1 Centroid of 4 Point Masses
 
-Like arbitrary triangle, we can represent a scalene quadrilateral using three side vectors $a$, $b$ and $c$ which run from one common point (point mass $m_1$). Three other identical point masses as $m_1$ are located at each end of the vectors with their respective coordinates.
+Like arbitrary triangle, we can represent a scalene quadrilateral using three side vectors $\bold{a}$, $\bold{b}$ and $\bold{c}$ which run from one common point (point mass $m_1$). Three other identical point masses as $m_1$ are located at each end of the vectors with their respective coordinates.
 
 <figure>
   <img src="./bilder/viereck1.png">
   <figcaption>Fig. 6: Four Point Masses</figcaption>
 </figure>
 
-Adding the direction $c$ as one of the position vectors $r_i$ along with $a$ and $b$ (all pointing from point mass $m_1$), the position of the centroid of four point masses using equation (1.2) can be defined as
+Adding the direction $\bold{c}$ as one of the position vectors $\bold{r_i}$ along with $\bold{a}$ and $\bold{b}$ (all pointing from point mass $m_1$), the position of the centroid of four point masses using equation (1.2) can be defined as
 
-$$ r_c = \frac{m_{1} \cdot\begin{pmatrix} 0 \\ 0 \\ 0\end{pmatrix} + m_{2} \cdot \begin{pmatrix} 0 \\ b\\ 0 \end{pmatrix} + m_3 \cdot \begin{pmatrix} a \\0 \\ 0 \end{pmatrix} + m_4 \cdot \begin{pmatrix}0\\0\\c\end{pmatrix}}{m_{1} + m_{2} +m_3+m_4}   $$
+$$ \bold{r_c} = \frac{m_{1} \cdot\begin{pmatrix} 0 \\ 0 \end{pmatrix} + m_{2} \cdot \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix} + m_3 \cdot \begin{pmatrix} x_3-x_1 \\ y_3-y_1 \end{pmatrix} + m_4 \cdot \begin{pmatrix}x_4-x_1 \\ y_4-y_1\end{pmatrix}}{m_{1} + m_{2} +m_3+m_4}   $$
 
 Considering all point masses equal to $m_{a}$ yields
 
 $$
   \begin{aligned}
-  r_{c} &= \frac{m_{a}\begin{pmatrix} a \\ b \\ c\end{pmatrix}}{4m_{a}} \\
-  &= \frac{1}{4} (a+b+c)
+  \bold{r_c} &= \frac{m_{a} \cdot (\bold{a+b+c})}{4m_{a}} \\
+  &= \frac{1}{4} (\bold{a+b+c})
 \end{aligned}
 $$ 
 
@@ -363,21 +359,20 @@ We have achieved the distance between the centroid and point mass $m_1$. All we 
 
 $$
   \begin{aligned}
-  r_{c2} &= -b + r_{G} = \frac{1}{4} (a-3b+c) \\
-  r_{c3} &= -a + r_{G} = \frac{1}{4} (-3a+b+c) \\
-  r_{c4} &= -c + r_{G} = \frac{1}{4} (a+b-3c) 
+  \bold{r_{c2}} &= -\bold{b} + \bold{r_{G}} = \frac{1}{4} (\bold{a}-3\bold{b+c}) \\
+  \bold{r_{c3}} &= -\bold{a} + \bold{r_{G}} = \frac{1}{4} (-3\bold{a+b+c}) \\
+  \bold{r_{c4}} &= -\bold{c} + \bold{r_{G}} = \frac{1}{4} (\bold{a+b}-3\bold{c}) 
 \end{aligned}
 $$ 
 
 ### 4.2 Mass Moment of Inertia of 4 Point Masses
 
-Applying the same concept as three point masses, the axis of rotation of four point masses is located at the centroid. Using the equation from (1.3), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass
+Applying the same concept as three point masses, the axis of rotation of four point masses is located at the centroid. Using equation (1.3), $r_i^2$ is defined as the square of the distance of point mass $m_i$ to the center of mass
 
 $$
   \begin{aligned}
-  J_{4Particles} &= m_{1} \cdot (\frac{1}{4} (a+b+c))^2 + m_{2} \cdot (\frac{1}{4}(a-3b+c))^2 \\
-  &+ m_{3} \cdot (\frac{1}{4} (-3a+b+c))^2 + m_{4} \cdot (\frac{1}{4} (a+b-3c))^2 \\
-  &= \frac{m_{a}}{16} (12a^2+12b^2+12c^2-8ab-8ac-8bc) 
+  J_{4Particles} &= m_{1} \cdot (\frac{1}{4} (\bold{a+b+c}))^2 + m_{2} \cdot (\frac{1}{4}(\bold{a}-3\bold{b+c}))^2 + m_{3} \cdot (\frac{1}{4} (-3\bold{a+b+c}))^2 + m_{4} \cdot (\frac{1}{4} (\bold{a+b}-3\bold{c}))^2 \\
+  &= \frac{m_{a}}{16} \cdot (12a^2+12b^2+12c^2-8\bold{ab}-8\bold{ac}-8\bold{bc}) 
 \end{aligned}
 $$ 
 
@@ -417,22 +412,13 @@ $$
   <figcaption>Fig. 8: Center of mass in quadrilateral</figcaption>
 </figure>
 
-$r_{t1}$ and $r_{t2}$ are the center of mass of the triangles respectively (Fig. 8 is just a sketch and not accurate). $d_{D1}$ and $d_{D2}$ are then obtained using vector addition. Reintroducing $I_c$ of triangle (see (1.5)) into the equation gives us
+$\bold{r_{t1}}$ and $\bold{r_{t2}}$ are the center of mass of the triangles respectively (Fig. 8 is just a sketch and not accurate). $\bold{d_{D1}}$ and $\bold{d_{D2}}$ are then obtained using vector addition. Reintroducing $I_c$ of triangle (see (1.5)) into the equation gives us
 
-$$ 
-\begin{aligned}
-I_{T} = \frac{1}{36}\tilde{a} b \cdot (a^2-ab+b^2) + \frac{1}{2}\tilde{a}b \cdot (\frac{1}{12}(-a-b+3c))^2 + \frac{1}{36}\tilde{a}c \cdot (a^2-ac+c^2) + \frac{1}{2}\tilde{a}c \cdot (\frac{1}{12}(-a+3b-c))^2
-\end{aligned} 
-$$
+$$ I_{T} = \frac{1}{36}\bold{\tilde{a} b} \cdot (a^2-\bold{ab}+b^2) + \frac{1}{2}\bold{\tilde{a}b} \cdot (\frac{1}{12}(-\bold{a}-\bold{b}+3\bold{c}))^2 + \frac{1}{36}\bold{\tilde{a}c} \cdot (a^2-\bold{ac}+c^2) + \frac{1}{2}\bold{\tilde{a}c} \cdot (\frac{1}{12}(-\bold{a}+3\bold{b-c}))^2 $$
 
-Simplifying the equation above and combining with $J$=$\rho tI_{T}$, $M$=$\rho t A$, and $A$=$\frac{1}{2}\tilde{a}b$ yields
+Simplifying the equation above and combining with $J$=$\rho tI_{T}$, $M$=$\rho t A$, and $A$=$\frac{1}{2}\bold{\tilde{a}b}$ yields
 
-$$
-\begin{aligned} 
-J = \frac{M_{D1}}{18}(a^2-ab+b^2) + \frac{M_{D1}}{144}(a^2+b^2+9c^2+2ab-6ac-6bc) \\
-+ \frac{M_{D2}}{18}(a^2-ac+c^2) + \frac{M_{D2}}{144}(a^2+9b^2+c^2-6ab+2ac-6bc) 
-\end{aligned}
-$$
+$$ J = \frac{M_{D1}}{18} \cdot (a^2-\bold{ab}+b^2) + \frac{M_{D1}}{144}\cdot(a^2+b^2+9c^2+2\bold{ab}-6\bold{ac}-6\bold{bc}) + \frac{M_{D2}}{18} \cdot (a^2-\bold{ac}+c^2) + \frac{M_{D2}}{144} \cdot(a^2+9b^2+c^2-6\bold{ab}+2\bold{ac}-6\bold{bc}) $$
 
 where
 
@@ -456,8 +442,8 @@ We can now simplify the mass moment of inertia of a quadrilateral as
 
 $$
   \begin{aligned}
-  J_{Quad} &= \frac{M}{36}(2a^2+b^2+c^2-ab-ac) + \frac{M}{288}(2a^2+10b^2+10c^2-4ab-4ac-12bc) \\
-  &= \frac{M}{192}(12a^2+12b^2+12c^2-8ab-8ac-8bc)
+  J_{Quad} &= \frac{M}{36}\cdot(2a^2+b^2+c^2-\bold{ab-ac}) + \frac{M}{288} \cdot (2a^2+10b^2+10c^2-4\bold{ab}-4\bold{ac}-12\bold{bc}) \\
+  &= \frac{M}{192} \cdot(12a^2+12b^2+12c^2-8\bold{ab}-8\bold{ac}-8\bold{bc})
 \end{aligned}
 $$ 
 
@@ -467,18 +453,18 @@ The last part of this calculation would be the theory of the mass moment of iner
 $$
   \begin{aligned}
   J_{Particles} &= J_{Quad} \\
-  \frac{m_{a}}{16} (12a^2+12b^2+12c^2-8ab-8ac-8bc) &= \frac{M}{192}(12a^2+12b^2+12c^2-8ab-8ac-8bc)
+  \frac{m_{a}}{16} \cdot (12a^2+12b^2+12c^2-8\bold{ab}-8\bold{ac}-8\bold{bc}) &= \frac{M}{192}\cdot(12a^2+12b^2+12c^2-8\bold{ab}-8\bold{ac}-8\bold{bc})
   \end{aligned}
 $$
 $$
 \begin{aligned}
- && m_{a} &= \frac{1}{12}M 
+ &&&&&&&& m_{a} &= \frac{1}{12}M 
 \end{aligned}
 $$ (T5)
 
 Here, we can conclude that the mass of each point mass $m_a$ equals to one twelfth of the mass of a scalene quadrilateral, while the rest belongs to the mass concentrated at the center of the point masses.
 
-Using the equation from (1.1) leads to
+Using equation (1.1) leads to
 
 $$
 \begin{aligned}
@@ -535,65 +521,6 @@ Inserting the value of $n$ into the equation for polygons with 5 to 9 sides resu
 | 7        | $\frac{1}{28} M$  | $\frac{3}{4} M$ |
 | 8        | $\frac{1}{24} M$  | $\frac{2}{3} M$ |
 | 9        | $\frac{1}{36} M$  | $\frac{3}{4} M$ |
-
-## 6. Example
-----
-
-A simple experiment can be conducted to prove this theory. We would need acrylic glass or PMMA (Poly Methyl Methacrylate) for the 2D surface meanwhile the point masses (including center mass) can be represented by using steel balls linked with light material such as plastic so that the mass is negligible.
-
-This theory is proven when these 3 tests are carried out successfully:
-
-1) Equal mass
-2) Equal center of mass
-3) Equal mass moment of inertia
-
-### Equal Mass
-
-The dimension and the total mass of the system of particles (made of steel balls) must equivalent with the acrylic glass. In this case, we will conduct an experiment using 3 point masses and its corresponding 2D shape, triangle. Firstly, cut the acrylic glass into a arbitrary triangle shape. Take the measurement of the dimension and the mass of the acrylic glass. Using the mass of the glass, compare with the calculated mass for the steel balls. In this case, the mass of the steel balls acting as the point masses need to be one twelfth of the mass of acrylic glass meanwhile the steel ball acting as the center mass has a mass of three quarter of the mass of the acrylic glass. The steel balls are then linked together and this is done by 3D printing technic, in which the center mass needs to be located at the center of mass of the system as calculated before.
-
-The mass of the completed model of this system of particles using steel balls is then taken. If the mass of it corresponds with the mass of acrylic glass, then the first test is completed.
-
-### Equal Center of Mass
-
-An experimental method for locating the center of mass is to suspend both acrylic glass and the steel balls from two equivalent vertices/point masses and to mark vertical lines along the pivot points. The intersection of the two lines is the center of mass. The second test is now completed if the center of mass for the steel balls is located at the center mass and corresponds to the center of mass of the acrylic glass.
-
-### Equal mass moment of inertia
-
-To conduct the third test, we have to mount both acrylic glass and the steel balls at the same equivalent point such that it can swing in a vertical plane about an axis passing through the body. This is known as a physical pendulum, in which object oscillates as a pendulum, but cannot be modeled as a point mass on a string. Both objects are then displaced from their equilibrium position by an angle $\theta$. 
-
-<figure>
-  <img src="./bilder/torque.png">
-  <figcaption>Fig. 8: Physical Pendulum</figcaption>
-</figure>
-
-When a physical pendulum is hanging from a point but is free to rotate, it rotates because of the torque applied at the $C$, produced by the component of the object’s weight that acts tangent to the motion of the $C$. Taking the counterclockwise direction to be positive, the component of the gravitational force that acts tangent to the motion is $−mg\sin{\theta}$. The restoring torque is
-
-$$ \tau = -mgd \cdot \sin{\theta} $$
-
-and $\theta$ $\approx$ $\sin{\theta}$ for small $\theta$. 
-The torque on a given axis is also the product of the moment of inertia and the angular acceleration. Rearranging, we get:
-
-$$
-\begin{aligned}
-\tau = I \cdot \alpha &= -mgd \cdot \sin{\theta} \\
-I \cdot \frac{\mathrm{d}^2\theta}{\mathrm{d}T^2} &= -mgd \cdot \theta  \\
-\frac{\mathrm{d}^2\theta}{\mathrm{d}T^2} &= -(\frac{mgd}{I}) \cdot \theta
-\end{aligned}
-$$
-
-The angular frequency is
-$$ \omega = \sqrt{\frac{mgd}{I}} $$
-
-The period is therefore
-
-$$T = 2\pi \cdot \sqrt{\frac{I}{mgd}} $$
-
-Rearranging, moment of inertia of an object about any specific pivot point on the object is
-
-$$ I = \frac{T^2 \cdot mgd}{4\pi^2} $$
-$$ I \approx T^2 $$
-
-By achieving the same oscillation period for both acrylic glass and steel balls, the third test is now proven and thus the theory is correct.
 
 ## 7.  Conclusion
 ----
