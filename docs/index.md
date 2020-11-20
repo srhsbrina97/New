@@ -19,6 +19,7 @@ Mathematically, it can be written as
 $$ \sum M_{Particles} = n \cdot m_{a} + m_{c} = M $$ (1.1)
 
 ## 1 Introduction
+
 ---
 
 ### 1.1 Center of Mass
@@ -67,6 +68,7 @@ where $r$ is the vector perpendicular to the axis of rotation and extending from
 Usually, the mass element $\mathrm{d} m$ will be expressed in terms of the geometry of the object, so that the integration can be carried out over the object as a whole (for example, over a long uniform rod).
 
 ## 2 Straight Line
+
 ----
 
 We will start this case study using two point masses, which then be correlated with a slender, uniform rod of the same length. The rod has a mass of $M$ which is equally distributed across the rod. The two point masses are of equal mass $m_a$.
@@ -177,6 +179,7 @@ $$
   $$ (T2)
 
 ## 3 Triangle
+
 ----
 
 Next, we will do calculations for three point masses with its corresponding shape, arbitrary triangle of the same size. The idea is, the center of gravity of this triangle coincides with the center of gravity of the three point masses.
@@ -329,6 +332,7 @@ $$
 $$ (T4)
 
 ## 4 Quadrilateral
+
 ----
 
 A quadrilateral is a polygon with four edges (sides) and four vertices (corners). In this case study, we will use a scalene quadrilateral, which is a four-sided polygon that has no congruent or identical sides. We will seek the relationship between four point masses of the same mass and a planar quadrilateral of the same size as the point masses in terms of mass moment of inertia. The centroid of four point masses also coincides with the center of mass of this quadrilateral.
@@ -481,6 +485,7 @@ $$ (T6)
 
 
 ## 5. n-sided Polygons
+
 ----
 
 From all the calculations made, we have
@@ -523,11 +528,13 @@ Inserting the value of $n$ into the equation for polygons with 5 to 9 sides resu
 | 9        | $\frac{1}{36} M$  | $\frac{3}{4} M$ |
 
 ## 7.  Conclusion
+
 ----
 
 The center of mass is a useful reference point for calculations in mechanics that involve masses distributed in space. The shape of an object might already be mathematically determined, but it may be too complex to use a known formula. Therefore this case study might helps when you have a 2D surface with a lot of sides/vertices. We can also conclude that in a system of particles, more than half of the total mass would be concentrated at its center of mass.
 
 ## Reference
+
 ----
 
 [1. Symplectic Geometry for Engineers - Triangle](https://www.researchgate.net/publication/338655499_Symplectic_Geometry_for_Engineers_-_Triangle)<br>
