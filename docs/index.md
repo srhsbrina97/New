@@ -422,7 +422,7 @@ $$ I_{T} = \frac{1}{36}\bold{\tilde{a} b} \cdot (a^2-\bold{ab}+b^2) + \frac{1}{2
 
 Simplifying the equation above and combining with $J$=$\rho tI_{T}$, $M$=$\rho t A$, and $A$=$\frac{1}{2}\bold{\tilde{a}b}$ yields
 
-$$ J = \frac{M_{D1}}{18} \cdot (a^2-\bold{ab}+b^2) + \frac{M_{D1}}{144}\cdot(a^2+b^2+9c^2+2\bold{ab}-6\bold{ac}-6\bold{bc}) + \frac{M_{D2}}{18} \cdot (a^2-\bold{ac}+c^2) + \frac{M_{D2}}{144} \cdot(a^2+9b^2+c^2-6\bold{ab}+2\bold{ac}-6\bold{bc}) $$
+$$ J = \frac{M_{D1}}{18} \cdot (\bold{a-b})^2 + \frac{M_{D1}}{144}\cdot(\bold{a+b}-3\bold{c})^2 + \frac{M_{D2}}{18} \cdot (\bold{a-c})^2 + \frac{M_{D2}}{144} \cdot(\bold{a}-3\bold{b+c})^2 $$
 
 where
 
